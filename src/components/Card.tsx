@@ -1,5 +1,5 @@
 interface CardProps {
-  children: string;
+  children: React.ReactNode;
   bg?: string;
 }
 
