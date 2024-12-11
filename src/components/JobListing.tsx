@@ -1,4 +1,13 @@
-const JobListing = ({ job }) => {
+interface JobProps {
+  type: string;
+  title: string;
+  description: string;
+  salary: string;
+  location: string;
+  id: string;
+}
+
+const JobListing = ({ job }: { job: JobProps }) => {
   return (
     <div key={job.id} className="bg-white rounded-xl shadow-md relative">
       <div className="p-4">
