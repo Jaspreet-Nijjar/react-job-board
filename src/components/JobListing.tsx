@@ -31,7 +31,10 @@ const JobListing = ({ job }: { job: JobProps }) => {
         </div>
 
         <h3 className="text-indigo-500 mb-2">{job.salary} / Year</h3>
-        <button onClick={handleClick}>
+        <button
+          onClick={handleClick}
+          className="text-indigo-500 mb-5 hover:text-indigo-600"
+        >
           {showMore ? 'Read More' : 'Read Less'}
         </button>
 
