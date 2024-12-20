@@ -1,4 +1,16 @@
+import { useState } from 'react';
+
 const AddJobPage = () => {
+  const [title, setTitle] = useState('');
+  const [type, setType] = useState('');
+  const [location, setlocation] = useState('');
+  const [description, setDescription] = useState('');
+  const [salary, setSalary] = useState('');
+  const [companyName, setCompanyName] = useState('');
+  const [companyDescription, setCompanyDescription] = useState('');
+  const [contactEmail, setContactEmail] = useState('');
+  const [contactPhone, setContactPhone] = useState('');
+
   return (
     <section className="bg-indigo-50">
       <div className="container m-auto max-w-2xl py-24">
