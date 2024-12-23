@@ -16,6 +16,28 @@ const EditJobPage = () => {
   const [contactEmail, setContactEmail] = useState(job.company.email);
   const [contactPhone, setContactPhone] = useState(job.company.phone);
 
+  const submitForm = (e) => {
+    e.preventDefault();
+
+    const newJob = {
+      title,
+      type,
+      location,
+      description,
+      salary,
+      company: {
+        name: companyName,
+        description: companyDescription,
+        contactEmail,
+        contactPhone,
+      },
+    };
+
+    addJobSubmit(newJob);
+    toast.success('Job Added Successfully');
+    return navigate('/jobs');
+  };
+
   return (
     <section className="bg-indigo-50">
       <div className="container m-auto max-w-2xl py-24">
