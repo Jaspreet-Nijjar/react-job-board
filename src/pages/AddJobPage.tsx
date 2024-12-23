@@ -94,7 +94,6 @@ const AddJobPage = ({ addJobSubmit }) => {
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
                 className="border rounded w-full py-2 px-3"
-                rows="4"
                 placeholder="Add any job duties, expectations, requirements, etc"
               ></textarea>
             </div>
@@ -177,7 +176,6 @@ const AddJobPage = ({ addJobSubmit }) => {
                 onChange={(e) => setCompanyDescription(e.target.value)}
                 name="company_description"
                 className="border rounded w-full py-2 px-3"
-                rows="4"
                 placeholder="What does your company do?"
               ></textarea>
             </div>
